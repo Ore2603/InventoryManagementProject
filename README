@@ -1,0 +1,95 @@
+Inventory Management System (C++ Qt)
+
+Project Overview
+This project is a GUI-based Inventory Management System developed in C++ using the Qt framework. The application allows users to manage products by adding, deleting, searching, and updating inventory quantities. It was created for COP 3003 – Object-Oriented Programming.
+
+Features
+- Add products with name, quantity, and price per unit
+- Automatically update quantity if the product already exists
+- Display inventory in a table format
+- Delete products from inventory
+- Search for products by name
+- Remove a specific quantity from a product
+- Automatically delete a product if its quantity reaches zero
+- Calculate total value (quantity × price)
+- Input validation with error messages
+
+GUI Components
+The program uses:
+- QLabel for field descriptions
+- QLineEdit for user input
+- QPushButton for actions (Add, Delete, Search, Remove Quantity)
+- QTableWidget to display the inventory
+
+The interface was built using Qt Designer and follows an event-driven structure.
+
+Object-Oriented Concepts Used
+
+Classes and Objects
+- Item (base class)
+- Product (derived class)
+- MainWindow (controls GUI and logic)
+
+Encapsulation
+- Data members are protected
+- Access is controlled through public getter and modifier functions
+
+Inheritance
+- Product inherits from Item
+
+Polymorphism
+- Virtual function getTotalValue() is overridden in the Product class
+
+Abstract Class
+- Item is an abstract class with a pure virtual function
+
+Composition
+- MainWindow contains a vector of Item pointers representing the inventory
+
+Templates
+- A template function is used for simple calculations
+
+Technologies Used
+- C++
+- Qt Framework (Qt Widgets)
+- Qt Creator
+- CMake
+- GitHub
+
+How to Run
+
+On macOS:
+1. Open Qt Creator
+2. Open the project folder
+3. Select the Qt kit for macOS
+4. Click Run
+
+On Windows:
+1. Install Qt Creator
+2. Open the project
+3. Select a Desktop kit
+4. Build and run the program
+
+Project Structure
+
+InventoryManagementSystem/
+|
+|-- main.cpp
+|-- mainwindow.h
+|-- mainwindow.cpp
+|-- mainwindow.ui
+|-- item.h
+|-- product.h
+|-- CMakeLists.txt
+|-- README.md
+
+Error Handling
+- Prevents empty input fields
+- Ensures quantity and price are valid numbers
+- Displays error messages using QMessageBox
+
+Use of AI Tools
+AI tools were used for debugging assistance, understanding Qt, and improving code structure. All code was reviewed and understood before submission.
+
+Conclusion
+This project demonstrates the use of object-oriented programming concepts combined with GUI development. It provides a simple and functional system for managing inventory.
