@@ -88,6 +88,14 @@ Error Handling
 - Ensures quantity and price are valid numbers
 - Displays error messages using QMessageBox
 
+Future Improvements
+- Implement a maximum inventory size (capacity limit) to simulate real-world storage constraints and prevent unlimited item additions
+- Add a "brand" attribute to each product to allow better categorization and organization
+- Save and load inventory data from files
+- Add low stock alerts for items with small quantities
+- Implement sorting and filtering options
+- Add profit and loss tracking
+
 Use of AI Tools
 AI tools were used for debugging assistance, understanding Qt, and improving code structure. All code was reviewed and understood before submission.
 
